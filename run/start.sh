@@ -1,3 +1,3 @@
 #!/bin/sh
 
-exec node run cast-web-api
+exec npx cast-web-api
