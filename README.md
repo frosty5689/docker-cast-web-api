@@ -9,7 +9,9 @@
 docker run \
   --name cast-web-api \
   -e TZ=YOUR_TIMEZONE \
-  -p YOUR_PORT:3000/tcp \
+  -e HOST=YOUR_HOST \
+  -e PORT=YOUR_PORT \
+  -p YOUR_PORT:YOUR_PORT/tcp \
   frosty5689/cast-web-api
 ```
 
@@ -17,4 +19,5 @@ docker run \
 
 * `--net=host` - Uses host network with container, use this if H@H have trouble accepting connections. This will let H@H use the host's internal IP for routing instead of the internal IP used by Docker bridge.
 * `-e TZ` - Timezone to run the app in
-* `-p YOUR_PORT:3000/tcp` - Expose port 3000 used by the app as port YOUR_PORT to handle requests from SmartThings
+* `-e HOST` - Set the app to listener on a specific host (defaults to 0.0.0.0)
+* `-p YOUR_PORT:YOUR_PORT/tcp` - Expose port YOUR_PORT used by the app as port YOUR_PORT to handle requests from SmartThings
