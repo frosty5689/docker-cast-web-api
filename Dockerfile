@@ -9,7 +9,7 @@ RUN apk add --no-cache --update \
   && rm -rf /root/.cache
 
 RUN mkdir -p /opt/cast-web-api && \
-    cd /opt/smartthings-tplink && \
+    cd /opt/cast-web-api && \
     npm install cast-web-api
 
 ADD run/* /opt/cast-web-api/
