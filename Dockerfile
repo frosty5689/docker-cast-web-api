@@ -16,7 +16,9 @@ ADD run/* /opt/cast-web-api/
 
 WORKDIR /opt/cast-web-api/
 
-EXPOSE 3000/tcp
+ENV PORT=3000
+
+EXPOSE $PORT/tcp
 
 CMD ["/opt/cast-web-api/start.sh"]
 
