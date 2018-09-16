@@ -8,14 +8,16 @@
 ```
 docker run \
   --name cast-web-api \
+  --net=host \
   -e TZ=YOUR_TIMEZONE \
-  -e HOST=YOUR_HOST \
+  -e HOSTNAME=YOUR_HOST \
   -e PORT=YOUR_PORT \
   -p YOUR_PORT:YOUR_PORT/tcp \
   frosty5689/cast-web-api
 ```
 
 ## Parameters
+* `--net=host` - Uses host network with container, this is required for cast-web-api to discover Chromecast Devices
 * `-e TZ` - Timezone to run the app in
-* `-e HOSTNAME` - Set the app to listener on a specific hostname (defaults to 0.0.0.0)
+* `-e HOSTNAME` - Set the app to listener on a specific hostname (defaults to 127.0.0.1)
 * `-p YOUR_PORT:YOUR_PORT/tcp` - Expose port YOUR_PORT used by the app as port YOUR_PORT to handle requests from SmartThings

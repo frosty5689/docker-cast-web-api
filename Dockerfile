@@ -16,7 +16,7 @@ ADD run/* /opt/cast-web-api/
 
 WORKDIR /opt/cast-web-api/
 
-ENV HOST=0.0.0.0
+ENV HOSTNAME=127.0.0.1
 ENV PORT=3000
 
 EXPOSE $PORT/tcp
