@@ -8,13 +8,11 @@ RUN apk add --no-cache --update \
   && update-ca-certificates \
   && rm -rf /root/.cache
 
-RUN mkdir -p /opt/cast-web-api && \
-    cd /opt/cast-web-api && \
-    npm install cast-web-api
-
 ADD run/* /opt/cast-web-api/
 
 WORKDIR /opt/cast-web-api/
+
+RUN npm install
 
 ENV HOSTNAME=127.0.0.1
 ENV PORT=3000
