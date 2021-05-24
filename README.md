@@ -21,3 +21,9 @@ docker run \
 * `-e TZ` - Timezone to run the app in
 * `-e HOSTNAME` - Set the app to listener on a specific hostname (defaults to 127.0.0.1)
 * `-p YOUR_PORT:YOUR_PORT/tcp` - Expose port YOUR_PORT used by the app as port YOUR_PORT to handle requests from SmartThings
+
+
+## Donation
+If you appreciate what I do and would like to show some support, buy me a coffee :)
+
+<a href="https://www.buymeacoffee.com/frosty5689" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png" alt="Buy Me A Coffee" style="height: 41px !important;width: 174px !important;box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;-webkit-box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;" ></a>
