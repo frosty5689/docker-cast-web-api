@@ -1,3 +1,3 @@
 #!/bin/sh
 
-exec npx cast-web-api --hostname=$HOSTNAME --port=$PORT
+exec npm run start -- --hostname=$HOSTNAME --port=$PORT
