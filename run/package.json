@@ -4,11 +4,12 @@
   "description": "[hub]: https://hub.docker.com/r/frosty5689/cast-web-api/",
   "main": "index.js",
   "dependencies": {
-    "cast-web-api": "^1.2.1"
+    "cast-web-api": "^1.2.1",
+    "forever": "^3.0.4"
   },
   "devDependencies": {},
   "scripts": {
-    "start": "node index.js",
+    "start": "npx forever index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
